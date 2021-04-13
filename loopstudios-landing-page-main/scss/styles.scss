@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+$white:hsl(0, 0%, 100%);
+$black:hsl(0, 0%, 0%);
+$dark-grey:hsl(0, 0%, 55%);
+$very-dark-grey:hsl(0, 0%, 41%);
+
+* {
+	margin:0;
+	padding:0;
+    box-sizing: border-box;
+
+}
+// https://coder-coder.com/responsive-navigation-bar-flexbox-vs-css-grid/
+html, body {
+    font-size: 15px;
+    font-family: 'Alata', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.header{
+    background: url(/images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 100%;
+    height:40vw;  
+}
+.navbar-wrapper, 
+.container {
+    margin: 0 15em;  
+    padding: 5em 0;
+}
+.navbar {  
+       display: flex;
+        justify-content: space-between;  
+        align-items: center;
+
+    &__menu-icon{
+        display: none;
+    }
+
+}
+.navigation{
+    & ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+ &_item a{
+     color: #fff;
+     text-decoration: none;
+     margin-right: 2em;
+     font-size: 1.2em;
+ }
+
+
+}
+.title__wrapper{
+    border: 2px solid #fff;
+    width: 400px;
+    margin-top: 7em;
+}
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 0.7em;
+    font-family: 'Alata';
+    font-weight: 100;
+
+}
+.logo{
+    font-family: 'Josefin';
+    font-size: 0.5rem;
+}
+
+.vr__section{
+    display: flex;
+    
+    &-image{
+        width: 400px;
+        height: 400px;
+        position: relative;
+        z-index: 1;
+    }
+    &-info{
+        position: absolute;
+        z-index: 2;
+        background: #fff;
+        width: 585px;
+        height: 317px;
+        top: 190%;
+        left: 53%;
+        padding: 5em;
+        font-weight: lighter;
+
+    p{
+
+        color: lighten(black, 50%);
+    }
+
+
+        h2{
+          text-transform: uppercase;
+          letter-spacing: 4px;
+          padding: 0.7em;
+          font-family: 'Alata';
+          font-size: 2em;
+          font-weight: lighter;
+        }
+    }
+
+}
